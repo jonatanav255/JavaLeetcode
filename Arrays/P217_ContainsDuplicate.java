@@ -1,14 +1,17 @@
 package Arrays;
 
 import java.util.HashSet;
+import java.util.Set;
 
 class P217_ContainsDuplicate {
 
+    // time complexity 0(n)
+    // space complexity 0(n)
     public boolean containsDuplicate(int[] nums) {
-        HashSet<Integer> seen = new HashSet<>();
+        Set<Integer> seen  = new HashSet<>(); // extra space
 
-        for (int num : nums) {
-            if (!seen.add(num)) {
+        for (int num : nums) { // 0(n) - iterate through array 
+            if (!seen.add(num)) { // 0(1) HashSet Add operation
                 return true;
             }
 
