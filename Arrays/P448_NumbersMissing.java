@@ -15,7 +15,7 @@ public class P448_NumbersMissing {
         }
 
         List<Integer> result = new ArrayList<>();
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = 1; i <= nums.length; i++) {
             if (!set.contains(i)) {
                 result.add(i);
             }
