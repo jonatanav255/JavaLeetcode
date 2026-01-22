@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// time complexity = O (n log n)
+// space complexity = O(N)
 public class P1365_HowMany {
 
     public int[] smallerNumbersThanCurrent(int[] nums) {
